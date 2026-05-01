@@ -28,3 +28,12 @@ The owner refers to \[name\] which made the software named \[project name\] at \
 2. Do not abuse, harm or tort (battery, stalking or abuse) others. A fancy way of saying not to fight with people or hit people in real life if it gets to a stalk or unauthorized access to peoples locations.  
 3. **MADE BY THE ORIGINAL OWNER** the software known as the licenses inside of the work known as the person who made the work and licenses known as the owner that refers to \[name\] that the project was made in \[date\] with guarantee that was the date it was made in.  
 4. **Do not do stuff that Jesus would not do.** The most important rule that covers this whole thing up.
+
+# **AGREE TO THE LICENSE**
+- [ ] **BY CLICKING THIS CHECKMARK, YOU AGREE TO THE ToS AND AUP. BY USING THE CODE, THE WORK, OR THE SOFTWARE—EVEN WITHOUT CLICKING THE CHECKMARK—YOU HAVE STILL AGREED TO THE ToS AND AUP IN FULL.**
+---
+# HOW TO USE THIS TEMPLATE:
+1. **Copy** the text above.
+2. **Paste** it into a file named `LICENSE.md`.
+3. **Fill in the brackets** `[ ]` with your Year, Name, and Project Name.
+4. **Write out the date** (Example: June First, Two Thousand Twenty Six) to make it official.
