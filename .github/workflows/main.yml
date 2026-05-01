@@ -1,32 +1,41 @@
-name: IET Sledgehammer MAX-REVERT
-on: [push]
-
-# This tells GitHub the robot is allowed to change the code ✍️
-permissions:
-  contents: write
-
-jobs:
-  defense:
-    runs-on: self-hosted  # Your robot will pick this up! 🤖✨
-    
-    # ONLY run this if the person is NOT you (the owner) 👮‍♂️
-    if: github.actor != github.repository_owner
-    
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Get the full history so we can go back in time ⏳
-
-      - name: Max Power Sledgehammer Reset
+      - name: 🛡️ Hardened Safety Revert
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+          TARGET_BRANCH: ${{ github.ref_name }}
+        permissions:
+          contents: write
         run: |
-          echo "Unauthorized access detected by ${{ github.actor }}!"
-          echo "IET SECURITY ACT (IETSA) TRIGGERED."
-          
-          # Tell Git who is doing the cleaning 🧹
-          git config --global user.name "IET MAX SECURITY"
-          git config --global user.email "timmytheonlinegirl@hotmail.com"
-          
-          # Delete the bad stuff and force it back to how it was! 🔨💥
-          git reset --hard HEAD~1
-          git push origin ${{ github.ref_name }} --force
+          # 1. Safety Check: Ensure BEFORE_SHA is valid (not all zeros)
+          if [[ "$BEFORE_SHA" == "0000000000000000000000000000000000000000" ]] || [[ -z "$BEFORE_SHA" ]]; then
+            echo "❌ Error: Invalid 'before' SHA. Cannot determine safe state."
+            exit 1
+          fi
+
+          echo "🚨 UNAUTHORIZED ACTIVITY DETECTED"
+          echo "🔄 Target safe state: $BEFORE_SHA"
+
+          # 2. Setup Identity
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 3. Ensure we have history and the correct branch
+          # This fixes 'shallow clone' errors where git doesn't know the $BEFORE_SHA
+          git fetch origin $TARGET_BRANCH --unshallow || git fetch origin $TARGET_BRANCH
+          git checkout $TARGET_BRANCH
+
+          # 4. Attempt Restoration
+          if git revert --no-edit $BEFORE_SHA..HEAD; then
+            echo "✅ Clean revert successful."
+            # Use force-with-lease for clean history management
+            git push origin $TARGET_BRANCH --force-with-lease
+          else
+            echo "⚠️ Revert conflicted. Forcing state to $BEFORE_SHA."
+            git revert --abort
+            
+            # Wipe local state and force-reset the branch pointer
+            git reset --hard $BEFORE_SHA
+            
+            # Use raw --force here because if it's a security event, 
+            # we need to overwrite the attacker regardless of race conditions.
+            git push origin $TARGET_BRANCH --force
+          fi
