@@ -1,0 +1,91 @@
+### --- IET SECURITY & PERSONAL SECRETS ---
+# Prevents leaking your alt email or IDs if they are in text files
+secrets.txt
+credentials.json
+*.pem
+*.key
+.env
+.env.local
+auth_token
+personal_info.md
+identity.xml
+private_config.yml
+*.p12
+*.pfx
+session_data/
+passwords/
+security_audit_logs/
+user_backups/
+temp_identity/
+recovery_codes/
+*.secret
+access_log
+
+### --- PYTHON STUFF (Clean Code Only) ---
+# Extra 20 to keep the "Max Python" version clean
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+### --- COMPUTER TRASH (The "Junk" Drawer) ---
+# Stops files your computer makes automatically from leaking
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.tmp
+*.temp
+*.swp
+*~
+.directory
+.fuse_hidden*
+.Trash-*
+.nfs*
+crash_reports/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.stylelintcache
+
+### --- APP & SYSTEM GARBAGE ---
+# Keeps your project from looking messy or unprofessional
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.history/
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.nox/
+pip-log.txt
+pip-delete-this-directory.txt
+out/
