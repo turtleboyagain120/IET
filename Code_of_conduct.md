@@ -1,5 +1,5 @@
 ### CODE OF CONDUCT MADE BY USING THE IET \-if else then LICENSE, PRIVATE POLICY AND DATA COLLECTION LICENSE AND TURTLEBOYAGAIN120:
-
+---
 ### **Directly stated “© 2026 turtleboyagain120 SOLELY FOR THE PURPOSE FOR THE CODE OF CONDUCT”**
 
 ### Intro: Most code of conducts just assume you will follow the rules but all of that changes
