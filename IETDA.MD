@@ -5,7 +5,7 @@
 # Intro:
 
 **The software known as the \[softwares name\] was made by the \[owners name\] who is the licensor of the software.**  
-**The software does not knowingly collect data, cookies or names of any age. A user under or over or in the middle of the age 13 IS NOT OF ANY RIGHTS being used to collect any of the data shown above in any form shown above.**
+**The software does not knowingly collect data, cookies or names of any age. A user under or over or of the age 13 IS NOT OF ANY RIGHTS being used to collect any of the data shown above in any form shown above.**
 
 # IETDA Privacy & Data Integrity Policy
 
