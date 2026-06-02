@@ -10,7 +10,6 @@ all rights reserved
  (UNCHANGABLE) Root to the work (unvaried, original): https://github.com/turtleboyagain120/IET`
 
 ---
-### Herbey granted free-of-charge irrecovable unmodified license to ("The Work") with the software, manual(s), and art's (including assets and animations) To run, modify, download, copy, and sublicense this license. All above copyright notices shall remain intact, unmodified hereinafter.
+### Herbey granted the owner grants the user a free-of-charge, irrecovable unmodified license to ("The Work") with the software, manual(s), and art's (including assets and animations) To run, modify, download, copy, and sublicense this license. All above copyright notices shall remain intact, unmodified hereinafter.
 ---
 **THIS PROJECT IS 'AS-IS' WITH ALL WARRANTIES DISCLAIMED OF IN CONTRACT, TORT, MIUSE OR OTHERWISE. THE LIABILITY CAP IS TEN THOUSAND UNITED STATES DOLLARS $10,000**
----
