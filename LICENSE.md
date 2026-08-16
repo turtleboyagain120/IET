@@ -3,7 +3,7 @@
 
 ### **I. MEANINGS**
 *   **“The owner”** refers to turtleboyagain120, the licensor and creator of **testing EULA and more** in 2026.
-*   **“The user”** is the licensee who clicked on, found, or is using the project.
+*   **“The user”** is the licensee who clicked on, found, or is using the software.
 
 ### **II. WHAT IS THE IET LICENSE?**
 > **IET LICENSE:** This document is a unified **Semi-License**, **Terms of Service (TOS)**, and **End User License Agreement (EULA)** rolled into one.
@@ -30,7 +30,7 @@ Most EULAs, TOSs, and semi-licenses try to take freedom away from the user. This
 *   **ERASURE:** You may not illegally remove the copyright notice or the owner's name from the project.
 
 ### **VI. DISCLAIMER**
-> **THIS PROJECT IS NOT GUARANTEED TO WORK NOR RUN CORRECTLY ON THE FIRST TRY AND IS SOLELY MADE BY THE OWNER. THE OWNER (ME) SHALL NOT BE RESPONSIBLE FOR ANY PROFIT LOSS, DATA LOSS, OR DAMAGE—INCLUDING ABUSE, HACKING, OR A COMPUTER CRASHING. THE USER HAS NO WARRANTIES WHATSOEVER. THE AUTHOR IS PROTECTED BY THE IET LICENSE.**
+> **THIS PROJECT IS AS IS WITHOUT WARRANTY OF ANY KIND IMPLIED OR EXPRESSED. THE OWNER SHALL NOT BE LIABLE FOR THIRD-PARTY DAMAGES, MISUSE, TORT (NEGILENCE) AND/OR ABUSE OF THE SOFTWARE.**
 
 ### **VII. SOFTWARE AGREEMENT**
 **BY using the software, YOU AGREE TO THIS LICENSE.**
